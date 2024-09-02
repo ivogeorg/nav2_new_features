@@ -11,7 +11,7 @@ sudo apt install ros-galactic-nav2-simple-commander
 
 2. (Action) Navigate to pose
 
-_Definition:_  
+_Definition (`NavigateToPose.action`):_  
 ```
 #goal definition
 geometry_msgs/PoseStamped pose
