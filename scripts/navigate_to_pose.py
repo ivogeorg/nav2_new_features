@@ -45,9 +45,9 @@ and at the pallet jack to remove it
 
 
 def main():
-    # Recieved virtual request for picking item at Shelf A and bringing to
+    # Recieved virtual request for picking item at Shelf C and bringing to
     # worker at the pallet jack 7 for shipping. This request would
-    # contain the shelf ID ("shelf_A") and shipping destination ("pallet_jack7")
+    # contain the shelf ID ("shelf_C") and shipping destination ("pallet_jack7")
     ####################
     request_item_location = 'shelf_C'
     request_destination = 'pallet_jack7'

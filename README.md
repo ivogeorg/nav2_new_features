@@ -9,7 +9,9 @@ sudo apt update
 sudo apt install ros-galactic-nav2-simple-commander
 ```
 
-2. (Action) Navigate to pose
+2. Code [origin](https://github.com/ros-navigation/navigation2/tree/main/nav2_simple_commander/nav2_simple_commander)  
+
+3. (Action) Navigate to pose
 
 _Definition (`NavigateToPose.action`):_  
 ```
