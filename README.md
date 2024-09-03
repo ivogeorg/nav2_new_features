@@ -73,7 +73,7 @@ Action servers: 1
 
 5. Waypoint following
 
-_Documentation:_
+_Documentation:_ [Waypoint Follower](https://docs.nav2.org/configuration/packages/configuring-waypoint-follower.html)  
 
 _Definition (`FollowWaypoints.action`):_  
 ```
@@ -89,3 +89,9 @@ uint32 current_waypoint
 
 _Nodes:_  
 ```
+user:~$ ros2 action info /follow_waypoints
+Action: /follow_waypoints
+Action clients: 0
+Action servers: 1
+    /waypoint_follower
+```  
