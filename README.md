@@ -2,18 +2,18 @@
 
 #### Notes
 
-1. Nav2 Simple Commander
+##### 1. Nav2 Simple Commander
 
 ```
 sudo apt update
 sudo apt install ros-galactic-nav2-simple-commander
 ```
 
-2. Code [origin](https://github.com/ros-navigation/navigation2/tree/main/nav2_simple_commander/nav2_simple_commander)  
+1. Code [origin](https://github.com/ros-navigation/navigation2/tree/main/nav2_simple_commander/nav2_simple_commander)  
 
 Specifically, in [`robot_navigator.py`](https://github.com/ros-navigation/navigation2/blob/main/nav2_simple_commander/nav2_simple_commander/robot_navigator.py)  
 
-3. (Action) Navigate to pose
+2. (Action) Navigate to pose
 
 _Definition (`NavigateToPose.action`):_  
 ```
@@ -42,7 +42,7 @@ Action servers: 1
     /bt_navigator
 ```
 
-4. (Action) Navigate through poses
+3. (Action) Navigate through poses
 
 _Definition (`NavigateThroughPoses.action`):_  
 ```
@@ -71,7 +71,7 @@ Action servers: 1
     /bt_navigator
 ```  
 
-5. Waypoint following
+4. Waypoint following
 
 _Documentation:_ [Waypoint Follower](https://docs.nav2.org/configuration/packages/configuring-waypoint-follower.html)  
 
@@ -95,3 +95,10 @@ Action clients: 0
 Action servers: 1
     /waypoint_follower
 ```  
+
+##### 2. Costmap Filters
+
+1. Keepout filters
+
+Narrative is poor. See [notebook](assets/Nav2-New-Features-Advanced-ROS2-Navigation-The-Construct.pdf)  
+
