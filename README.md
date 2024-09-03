@@ -2,7 +2,18 @@
 
 #### Notes
 
-##### 1. Nav2 Simple Commander
+##### 1. Initial position
+
+1. From the command line
+```
+ros2 topic pub /initialpose geometry_msgs/msg/PoseWithCovarianceStamped "{header: {stamp: {sec: 0}, frame_id: 'map'}, pose: {pose: {position: {x: 3.45, y: 2.15, z: 0.0}, orientation: {z: 1.0, w: 0.0}}}}"
+```  
+
+2. Notes
+   1. `pub --once` is not enough!
+   2. The publication should be terminated once the initial pose takes (and any goal is set) because it wreaks havoc on the localization and, thus, the mappings.  
+
+##### 2. Nav2 Simple Commander
 
 ```
 sudo apt update
@@ -96,9 +107,15 @@ Action servers: 1
     /waypoint_follower
 ```  
 
-##### 2. Costmap Filters
+##### 3. Costmap Filters
 
 1. Keepout filters
 
 Narrative is poor. See [notebook](assets/Nav2-New-Features-Advanced-ROS2-Navigation-The-Construct.pdf)  
 
+2. Speed limits
+
+**Notes:**
+1. Seems like keepout-zone filters and speed-limit filters are mutually exclusive. At least this is what the materials imply, but of course that is not reliable.
+
+2. Drawing rectangles with different hues of gray in _Preview on Mac OS_ results in invalid cells for speed filters, obviously some _out-of-range_ error.  
