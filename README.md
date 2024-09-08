@@ -111,7 +111,7 @@ Action servers: 1
 
 1. Keepout filters
 
-Narrative is poor. See [notebook](assets/Nav2-New-Features-Advanced-ROS2-Navigation-The-Construct.pdf)  
+Narrative is poor. See [notebook](assets/Nav2-New-Features-Advanced-ROS2-Navigation-The-Construct.pdf). Maps with filters are in [`map_server/maps`](https://github.com/ivogeorg/nav2_pkgs/tree/main/map_server/maps).
 
 2. Speed limits
 
